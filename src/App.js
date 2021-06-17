@@ -6,7 +6,8 @@ import './styles/app.scss'
 import Title from './components/Title'
 import Nav from './components/Nav'
 import Body from './components/Body'
-import data from './data'
+import data from './utils/data'
+import Footer from './components/Footer'
 
 function App() {
   // State
@@ -23,6 +24,13 @@ function App() {
         setCurrentMenu={setCurrentMenu}
       />
       <Body currentMenu={currentMenu}/>
+      <Nav 
+        menu={menu} 
+        setMenu={setMenu} 
+        currentMenu={currentMenu} 
+        setCurrentMenu={setCurrentMenu}
+      />
+      <Footer />
     </div>
   );
 }
